@@ -1,1 +1,19 @@
 
+spring: 
+  database: 
+    driverClassName: org.postgresql.Driver
+  datasource: 
+    password: p0stgr@s
+    platform: postgres
+    testWhileIdle: true
+    url: "jdbc:postgresql://database:5432/eagle_eye_local"
+    username: postgres
+    validationQuery: "SELECT 1"
+  jpa: 
+    database: POSTGRESQL
+    properties: 
+      hibernate: 
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+tracer: 
+  property: "I AM THE DEFAULT"
